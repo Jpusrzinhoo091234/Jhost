@@ -1,0 +1,29 @@
+{
+  "users": [],
+  "testimonials": [
+    {
+      "id": 1,
+      "user": "marina_silva",
+      "avatar": "https://i.imgur.com/8Km9tLL.jpg",
+      "rating": 5,
+      "text": "Meu perfil cresceu muito depois que comecei a usar os serviços da AnimeBoost! Recomendo demais!",
+      "date": "2023-05-15"
+    },
+    {
+      "id": 2,
+      "user": "carlos_gaming",
+      "avatar": "https://i.imgur.com/JFHjdNE.jpg",
+      "rating": 4.5,
+      "text": "Serviço rápido e eficiente! Consegui monetizar meu perfil em menos de 2 meses!",
+      "date": "2023-06-22"
+    },
+    {
+      "id": 3,
+      "user": "julia_cosplay",
+      "avatar": "https://i.imgur.com/QZskFcd.jpg",
+      "rating": 5,
+      "text": "O suporte é incrível! Sempre me ajudam com qualquer dúvida. Os resultados são reais!",
+      "date": "2023-07-10"
+    }
+  ]
+}
