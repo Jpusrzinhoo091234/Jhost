@@ -37,18 +37,17 @@ const Auth = {
      * @param {string} password - User password
      * @returns {Promise<Object>} - User data or error
      */
-    async login(email, password) {
+    async login(name, password) {
         try {
-            // In a real app, this would be an API call
             const users = JSON.parse(localStorage.getItem(CONFIG.STORAGE_KEYS.USERS) || '[]');
-            const user = users.find(u => u.email === email && u.password === password);
+            const user = users.find(u => u.username === name && u.password === password);
             
             if (user) {
                 this.currentUser = user;
                 localStorage.setItem(CONFIG.STORAGE_KEYS.CURRENT_USER, JSON.stringify(user));
                 return { success: true, user };
             } else {
-                return { success: false, error: 'Email ou senha incorretos' };
+                return { success: false, error: 'Nome de usuário ou senha incorretos' };
             }
         } catch (error) {
             console.error('Login error:', error);
